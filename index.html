@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mots Pyschedelic Paint App</title>
+	<link href = "http://code.jquery.com/ui/1.12.1/themes/le-frog/jquery-ui.css"
+   rel = "stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="js/reimg.js"></script>	
+
+  <script src="js/app.js" type="text/javascript" charset="utf-8"></script>	
+</head>
+<body>
+	<div class="tools">
+		<button id="decrement" class="ui-button">-</button>
+		<button id="increment" class="ui-button">+</button>
+		<button id="normal">normal</button>
+		<button id="xor">xor</button>
+		<button id="overlay">overlay</button>
+		<button id="color-burn">color-burn</button>
+		<button id="help">?</button>
+	</div>
+	<canvas	id="canvas" width="600" height="400"></canvas>
+	<div class="controls">
+		<ul>
+			<li class="rainbow"></li>
+			<li class="red selected"></li>
+			<li class="blue"></li>
+			<li class="yellow"></li>
+		</ul>
+    <button id="save">Save</button>
+    <button id="revealColorSelect">New Color</button>
+    <button id="clear">Clear</button>
+		<div id="colorSelect">
+			<span id="newColor"></span>
+			<div class="sliders">
+					<div class="slider" id="red"></div>
+					<div class="slider" id="green"></div>
+					<div class="slider" id="blue"></div>						
+			</div>
+			<div>
+			<button id="addNewColor">Add Color</button>
+			</div>
+		</div>
+	</div><!-- End of controls -->
+
+</body>
+</html>
